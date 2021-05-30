@@ -1,0 +1,337 @@
+# vsim and_top -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 16:12:49 on May 20,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit and_top.
+#         Searched libraries:
+#             work
+# Optimization failed
+# Error loading design
+# End time: 16:12:50 on May 20,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log work.decoder_top
+# vsim -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log work.decoder_top 
+# Start time: 16:13:16 on May 20,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.Decoder_TOP_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.decoder_top(fast)
+# Loading work.decoder_DUT(fast)
+# Loading work.decoder_if(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit File: Decoder_MON1.sv Line: 20
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit File: Decoder_MON2.sv Line: 18
+# ** Fatal: (vsim-8274) Virtual interface elem. 'A' not found in 'decoder_if'.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit::decoder_driver File: Decoder_Driver.sv Line: 25
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:13:21 on May 20,2021, Elapsed time: 0:00:05
+# Errors: 1, Warnings: 2
+vlog Decoder_TOP.sv +incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 16:14:56 on May 20,2021
+# vlog -reportprogress 300 Decoder_TOP.sv "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv 
+# -- Compiling package Decoder_TOP_sv_unit
+# -- Importing package uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface decoder_if
+# -- Compiling module decoder_DUT
+# -- Compiling module decoder_top
+# -- Compiling package uvm_pkg (uvm-1.1d Built-in)
+# 
+# Top level modules:
+# 	decoder_top
+# End time: 16:14:58 on May 20,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vsim decoder_top -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log
+# vsim decoder_top -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 16:15:25 on May 20,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.Decoder_TOP_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.decoder_top(fast)
+# Loading work.decoder_DUT(fast)
+# Loading work.decoder_if(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit File: Decoder_MON1.sv Line: 20
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit File: Decoder_MON2.sv Line: 18
+# ** Fatal: (vsim-8274) Virtual interface elem. 'A' not found in 'decoder_if'.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit::decoder_driver File: Decoder_Driver.sv Line: 25
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:15:27 on May 20,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 2
+vlog Decoder_TOP.sv +incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 16:16:59 on May 20,2021
+# vlog -reportprogress 300 Decoder_TOP.sv "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv 
+# -- Compiling package Decoder_TOP_sv_unit
+# -- Importing package uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface decoder_if
+# -- Compiling module decoder_DUT
+# -- Compiling module decoder_top
+# -- Compiling package uvm_pkg (uvm-1.1d Built-in)
+# 
+# Top level modules:
+# 	decoder_top
+# End time: 16:17:01 on May 20,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vsim decoder_top -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log
+# vsim decoder_top -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 16:17:24 on May 20,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.Decoder_TOP_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.decoder_top(fast)
+# Loading work.decoder_DUT(fast)
+# Loading work.decoder_if(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit File: Decoder_MON1.sv Line: 20
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit File: Decoder_MON2.sv Line: 18
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit::decoder_driver File: Decoder_Driver.sv Line: 13
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+add wave sim:/decoder_top/intf/*
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test decoder_test...
+# UVM_INFO Decoder_MON2.sv(30) @ 5: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000000000
+# UVM_INFO Decoder_MON1.sv(30) @ 5: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0000
+# UVM_INFO Decoder_Driver.sv(25) @ 5: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0111
+# UVM_INFO Decoder_SB.sv(35) @ 5: uvm_test_top.ENV.sb [SB Not Matched ] pkt1.X=0000, pkt2.Y=0000000000000000
+# UVM_INFO Decoder_Seq.sv(19) @ 5: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0111, Y=0000000000000000
+# UVM_INFO Decoder_MON2.sv(30) @ 10: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000010000000
+# UVM_INFO Decoder_MON1.sv(30) @ 10: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0111
+# UVM_INFO Decoder_Driver.sv(25) @ 10: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0001
+# UVM_INFO Decoder_SB.sv(31) @ 10: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0111,pkt2.Y=0000000010000000
+# UVM_INFO Decoder_Seq.sv(19) @ 10: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0001, Y=0000000000000000
+# UVM_INFO Decoder_MON2.sv(30) @ 15: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000000010
+# UVM_INFO Decoder_MON1.sv(30) @ 15: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0001
+# UVM_INFO Decoder_Driver.sv(25) @ 15: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0101
+# UVM_INFO Decoder_SB.sv(31) @ 15: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0001,pkt2.Y=0000000000000010
+# UVM_INFO Decoder_Seq.sv(19) @ 15: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0101, Y=0000000000000000
+# UVM_INFO Decoder_MON2.sv(30) @ 20: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000100000
+# UVM_INFO Decoder_MON1.sv(30) @ 20: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0101
+# UVM_INFO Decoder_Driver.sv(25) @ 20: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=1001
+# UVM_INFO Decoder_SB.sv(31) @ 20: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0101,pkt2.Y=0000000000100000
+# UVM_INFO Decoder_Seq.sv(19) @ 20: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=1001, Y=0000000000000000
+# UVM_INFO Decoder_MON2.sv(30) @ 25: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000001000000000
+# UVM_INFO Decoder_MON1.sv(30) @ 25: uvm_test_top.ENV.ag1.mon1 [MON1]  X=1001
+# UVM_INFO Decoder_Driver.sv(25) @ 25: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=1001
+# UVM_INFO Decoder_SB.sv(31) @ 25: uvm_test_top.ENV.sb [SB Matched] pkt1.X=1001,pkt2.Y=0000001000000000
+# UVM_INFO Decoder_Seq.sv(19) @ 25: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=1001, Y=0000000000000000
+# UVM_INFO Decoder_MON2.sv(30) @ 30: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000001000000000
+# UVM_INFO Decoder_MON1.sv(30) @ 30: uvm_test_top.ENV.ag1.mon1 [MON1]  X=1001
+# UVM_INFO Decoder_Driver.sv(25) @ 30: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0111
+# UVM_INFO Decoder_SB.sv(31) @ 30: uvm_test_top.ENV.sb [SB Matched] pkt1.X=1001,pkt2.Y=0000001000000000
+# UVM_INFO Decoder_Seq.sv(19) @ 30: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0111, Y=0000000000000000
+# UVM_INFO Decoder_MON2.sv(30) @ 35: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000010000000
+# UVM_INFO Decoder_MON1.sv(30) @ 35: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0111
+# UVM_INFO Decoder_Driver.sv(25) @ 35: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0101
+# UVM_INFO Decoder_SB.sv(31) @ 35: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0111,pkt2.Y=0000000010000000
+# UVM_INFO Decoder_Seq.sv(19) @ 35: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0101, Y=0000000000000000
+# UVM_INFO Decoder_MON2.sv(30) @ 40: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000100000
+# UVM_INFO Decoder_MON1.sv(30) @ 40: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0101
+# UVM_INFO Decoder_Driver.sv(25) @ 40: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0010
+# UVM_INFO Decoder_SB.sv(31) @ 40: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0101,pkt2.Y=0000000000100000
+# UVM_INFO Decoder_Seq.sv(19) @ 40: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0010, Y=0000000000000000
+# UVM_INFO Decoder_MON2.sv(30) @ 45: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000000100
+# UVM_INFO Decoder_MON1.sv(30) @ 45: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0010
+# UVM_INFO Decoder_Driver.sv(25) @ 45: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0001
+# UVM_INFO Decoder_SB.sv(31) @ 45: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0010,pkt2.Y=0000000000000100
+# UVM_INFO Decoder_Seq.sv(19) @ 45: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0001, Y=0000000000000000
+# UVM_INFO Decoder_MON2.sv(30) @ 50: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000000010
+# UVM_INFO Decoder_MON1.sv(30) @ 50: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0001
+# UVM_INFO Decoder_Driver.sv(25) @ 50: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=1111
+# UVM_INFO Decoder_SB.sv(31) @ 50: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0001,pkt2.Y=0000000000000010
+# UVM_INFO Decoder_Seq.sv(19) @ 50: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=1111, Y=0000000000000000
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 50: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   52
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DECODER Seq]    10
+# [DRV Transaction]    10
+# [MON1]    10
+# [MON2]    10
+# [RNTST]     1
+# [SB Matched]     9
+# [SB Not Matched ]     1
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 50 ns  Iteration: 60  Instance: /decoder_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+quit -sim
+# End time: 16:26:15 on May 20,2021, Elapsed time: 0:08:51
+# Errors: 0, Warnings: 3
+cd {C:/Users/dell/Desktop/My Uvm/Decoder_UVM}
+vlog Decoder_TOP.sv +incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 16:26:57 on May 20,2021
+# vlog -reportprogress 300 Decoder_TOP.sv "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv 
+# -- Compiling package Decoder_TOP_sv_unit
+# -- Importing package uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface decoder_if
+# -- Compiling module decoder_DUT
+# -- Compiling module decoder_top
+# -- Compiling package uvm_pkg (uvm-1.1d Built-in)
+# 
+# Top level modules:
+# 	decoder_top
+# End time: 16:26:59 on May 20,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vsim decoder_top -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log
+# vsim decoder_top -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 16:27:27 on May 20,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.Decoder_TOP_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.decoder_top(fast)
+# Loading work.decoder_DUT(fast)
+# Loading work.decoder_if(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit File: Decoder_MON1.sv Line: 20
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit File: Decoder_MON2.sv Line: 18
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /Decoder_TOP_sv_unit::decoder_driver File: Decoder_Driver.sv Line: 13
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+add wave sim:/decoder_top/intf/*
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test decoder_test...
+# UVM_INFO Decoder_MON2.sv(30) @ 5: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000000000
+# UVM_INFO Decoder_MON1.sv(30) @ 5: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0000
+# UVM_INFO Decoder_Driver.sv(25) @ 5: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0111
+# UVM_INFO Decoder_SB.sv(35) @ 5: uvm_test_top.ENV.sb [SB Not Matched ] pkt1.X=0000, pkt2.Y=0000000000000000
+# UVM_INFO Decoder_Seq.sv(19) @ 5: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0111, Y=0000011110011000
+# UVM_INFO Decoder_MON2.sv(30) @ 10: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000010000000
+# UVM_INFO Decoder_MON1.sv(30) @ 10: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0111
+# UVM_INFO Decoder_Driver.sv(25) @ 10: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0001
+# UVM_INFO Decoder_SB.sv(31) @ 10: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0111,pkt2.Y=0000000010000000
+# UVM_INFO Decoder_Seq.sv(19) @ 10: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0001, Y=1110010000101111
+# UVM_INFO Decoder_MON2.sv(30) @ 15: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000000010
+# UVM_INFO Decoder_MON1.sv(30) @ 15: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0001
+# UVM_INFO Decoder_Driver.sv(25) @ 15: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0101
+# UVM_INFO Decoder_SB.sv(31) @ 15: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0001,pkt2.Y=0000000000000010
+# UVM_INFO Decoder_Seq.sv(19) @ 15: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0101, Y=1001100101110000
+# UVM_INFO Decoder_MON2.sv(30) @ 20: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000100000
+# UVM_INFO Decoder_MON1.sv(30) @ 20: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0101
+# UVM_INFO Decoder_Driver.sv(25) @ 20: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=1001
+# UVM_INFO Decoder_SB.sv(31) @ 20: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0101,pkt2.Y=0000000000100000
+# UVM_INFO Decoder_Seq.sv(19) @ 20: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=1001, Y=0011111110000100
+# UVM_INFO Decoder_MON2.sv(30) @ 25: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000001000000000
+# UVM_INFO Decoder_MON1.sv(30) @ 25: uvm_test_top.ENV.ag1.mon1 [MON1]  X=1001
+# UVM_INFO Decoder_Driver.sv(25) @ 25: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=1001
+# UVM_INFO Decoder_SB.sv(31) @ 25: uvm_test_top.ENV.sb [SB Matched] pkt1.X=1001,pkt2.Y=0000001000000000
+# UVM_INFO Decoder_Seq.sv(19) @ 25: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=1001, Y=0101111101111101
+# UVM_INFO Decoder_MON2.sv(30) @ 30: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000001000000000
+# UVM_INFO Decoder_MON1.sv(30) @ 30: uvm_test_top.ENV.ag1.mon1 [MON1]  X=1001
+# UVM_INFO Decoder_Driver.sv(25) @ 30: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0111
+# UVM_INFO Decoder_SB.sv(31) @ 30: uvm_test_top.ENV.sb [SB Matched] pkt1.X=1001,pkt2.Y=0000001000000000
+# UVM_INFO Decoder_Seq.sv(19) @ 30: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0111, Y=1111000010010011
+# UVM_INFO Decoder_MON2.sv(30) @ 35: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000010000000
+# UVM_INFO Decoder_MON1.sv(30) @ 35: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0111
+# UVM_INFO Decoder_Driver.sv(25) @ 35: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0101
+# UVM_INFO Decoder_SB.sv(31) @ 35: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0111,pkt2.Y=0000000010000000
+# UVM_INFO Decoder_Seq.sv(19) @ 35: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0101, Y=1011010000100100
+# UVM_INFO Decoder_MON2.sv(30) @ 40: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000100000
+# UVM_INFO Decoder_MON1.sv(30) @ 40: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0101
+# UVM_INFO Decoder_Driver.sv(25) @ 40: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0010
+# UVM_INFO Decoder_SB.sv(31) @ 40: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0101,pkt2.Y=0000000000100000
+# UVM_INFO Decoder_Seq.sv(19) @ 40: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0010, Y=0100010000000111
+# UVM_INFO Decoder_MON2.sv(30) @ 45: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000000100
+# UVM_INFO Decoder_MON1.sv(30) @ 45: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0010
+# UVM_INFO Decoder_Driver.sv(25) @ 45: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=0001
+# UVM_INFO Decoder_SB.sv(31) @ 45: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0010,pkt2.Y=0000000000000100
+# UVM_INFO Decoder_Seq.sv(19) @ 45: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=0001, Y=1001001111001101
+# UVM_INFO Decoder_MON2.sv(30) @ 50: uvm_test_top.ENV.ag2.mon2 [MON2] Y=0000000000000010
+# UVM_INFO Decoder_MON1.sv(30) @ 50: uvm_test_top.ENV.ag1.mon1 [MON1]  X=0001
+# UVM_INFO Decoder_Driver.sv(25) @ 50: uvm_test_top.ENV.ag1.drv [DRV Transaction] X=1111
+# UVM_INFO Decoder_SB.sv(31) @ 50: uvm_test_top.ENV.sb [SB Matched] pkt1.X=0001,pkt2.Y=0000000000000010
+# UVM_INFO Decoder_Seq.sv(19) @ 50: uvm_test_top.ENV.ag1.seqr@@seq [DECODER Seq] X=1111, Y=0010011100010010
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 50: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   52
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DECODER Seq]    10
+# [DRV Transaction]    10
+# [MON1]    10
+# [MON2]    10
+# [RNTST]     1
+# [SB Matched]     9
+# [SB Not Matched ]     1
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 50 ns  Iteration: 60  Instance: /decoder_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# End time: 16:29:28 on May 20,2021, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 3
